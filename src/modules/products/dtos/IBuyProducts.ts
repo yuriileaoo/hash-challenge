@@ -1,11 +1,4 @@
-interface IProducts {
-  id: string;
-  quantity: number;
-  unit_amount: number; // Preço do produto em centavos
-  total_amount: number; // Valor total na compra desse produto em centavos
-  discount: number; // Valor total de desconto em centavos
-  is_gift: boolean; // É brinde?
-}
+import IProducts from "./IProducts";
 
 export default interface IBuyProducts {
   total_amount: number; // Valor total da compra sem desconto
