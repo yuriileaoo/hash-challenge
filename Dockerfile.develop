@@ -12,9 +12,6 @@ ENV ENVIRONMENT=development
 
 ENV SERVICE_NAME="hash-challenge-service"
 
-ENV APP_API_URL=https://api.ewzhub.com
-ENV APP_WEB_HUB=https://ewzhub.com
-
 RUN npm install -g npm@7.21.0
 
 RUN npm install -g yarn
