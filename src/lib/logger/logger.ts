@@ -2,7 +2,6 @@
 import ecsFormat from "@elastic/ecs-winston-format";
 import apm from "elastic-apm-node";
 import winston, { LogCallback } from "winston";
-import ElasticsearchApm from "winston-elasticsearch-apm";
 
 class Logger {
   private logger: winston.Logger;
@@ -27,14 +26,9 @@ class Logger {
       logger = winston.createLogger({
         format: ecsFormat({
           convertReqRes: true,
-          serviceName: process.env.SERVICE_NAME,
-
           apmIntegration: !!apmIntegration,
         }),
-        transports: [
-          new ElasticsearchApm({ apm: this.prototype.apmAgent }),
-          new winston.transports.Console(),
-        ],
+        transports: [new winston.transports.Console()],
       });
     } else {
       logger = winston.createLogger({

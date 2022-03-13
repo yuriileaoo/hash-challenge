@@ -32,7 +32,11 @@ export default {
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   coverageReporters: ["text", "lcov", "clover"],
-  setupFiles: ["./jest-setup-file.ts"],
+  setupFiles: [
+    "./jest-setup-file.ts",
+    "dotenv/config",
+    "./.jest/setEnvVars.js",
+  ],
   testMatch: ["**/*.spec.ts"],
   // setupFiles: ["dotenv/config", "reflect-metadata"],
 };
