@@ -1,4 +1,4 @@
-export default interface IProducts {
-  id: string;
+export default interface IProductsRequest {
+  id: number;
   quantity: number;
 }
