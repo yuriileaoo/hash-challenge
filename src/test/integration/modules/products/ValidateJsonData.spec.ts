@@ -1,12 +1,7 @@
-import BuyProductsService from "@modules/products/services/BuyProductsService";
-
 import productsJson from "../../../../infra/data/products.json";
-
-let buyProductsService: BuyProductsService;
 
 describe("Validate products of JSON file", () => {
   const jsonProducts = productsJson;
-  buyProductsService = new BuyProductsService();
   it("should be able to count products of JSON file", async () => {
     expect(jsonProducts.length).toBe(6);
   });
