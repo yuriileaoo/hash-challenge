@@ -38,7 +38,7 @@ class App {
   }
 
   public listen(port: number): void {
-    this.app.listen(port || 3333);
+    this.app.listen(port || 3001);
     Logger.info(`Server port ${port}`);
   }
 }

@@ -1,5 +1,5 @@
 import IProductsRequest from "./IProductsRequest";
 
-export default interface IBuy {
+export default interface IInsertProducts {
   products: IProductsRequest[];
 }
