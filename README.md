@@ -64,11 +64,11 @@ Para configurar as variáveis de ambiente basta criar um arquivo ".env" na raiz 
 
 - .env
 
-    PORT=3333
+      PORT=3333
 
-    PORT_GRPC=50051
+      PORT_GRPC=50051
 
-    BLACK_FRIDAY='2022-11-26'
+      BLACK_FRIDAY='2022-11-26'
 
   
 
@@ -86,11 +86,11 @@ Para que os testes funcionem, será necessário configurar as variáveis de ambi
 
   
 
-    process.env.BLACK_FRIDAY='2022-11-26'
+      process.env.BLACK_FRIDAY='2022-11-26'
 
-    process.env.PORT=3333
+      process.env.PORT=3333
 
-    process.env.PORT_GRPC=50051
+      process.env.PORT_GRPC=50051
 
   
 
