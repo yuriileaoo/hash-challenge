@@ -1,7 +1,5 @@
-import { NotFoundError } from "@lib/errors";
-
-import IBuyProducts from "../dtos/IBuyProducts";
-import IProducts from "../dtos/IProducts";
+import IBuyProducts from "@modules/products/dtos/IBuyProducts";
+import IProducts from "@modules/products/dtos/IProducts";
 
 class BuyProductsService {
   public async execute(finalProducts: IProducts[]): Promise<IBuyProducts> {

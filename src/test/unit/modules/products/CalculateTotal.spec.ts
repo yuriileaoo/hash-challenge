@@ -1,4 +1,3 @@
-import { NotFoundError } from "@lib/errors";
 import CalculateTotalService from "@modules/products/services/CalculateTotalService";
 
 let calculateTotalService: CalculateTotalService;

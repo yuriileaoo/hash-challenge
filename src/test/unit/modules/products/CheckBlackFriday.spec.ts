@@ -1,4 +1,3 @@
-import { NotFoundError } from "@lib/errors";
 import CheckBlackFridayService from "@modules/products/services/CheckBlackFridayService";
 
 let checkBlackFridayService: CheckBlackFridayService;

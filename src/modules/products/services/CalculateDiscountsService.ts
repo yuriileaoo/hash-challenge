@@ -1,11 +1,10 @@
-import { response } from "express";
+import productsJson from "@infra/data/products.json";
+import client from "@infra/http/grpc/client";
+import IProducts from "@modules/products/dtos/IProducts";
+import IProductsRequest from "@modules/products/dtos/IProductsRequest";
 import { promisify } from "util";
 
 import { GetDiscountRequest } from "../../../../proto/discount_pb";
-import productsJson from "../../../infra/data/products.json";
-import client from "../../../infra/http/grpc/client";
-import IProducts from "../dtos/IProducts";
-import IProductsRequest from "../dtos/IProductsRequest";
 
 class BuyProductsService {
   public async execute(product: IProductsRequest): Promise<IProducts> {

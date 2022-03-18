@@ -1,14 +1,11 @@
-import productsJson from "../../../infra/data/products.json";
-import IBuyProducts from "../dtos/IBuyProducts";
-import IInsertProducts from "../dtos/IInsertProducts";
-import IProducts from "../dtos/IProducts";
-import IProductsRequest from "../dtos/IProductsRequest";
+import productsJson from "@infra/data/products.json";
+import IInsertProducts from "@modules/products/dtos/IInsertProducts";
+import IProductsRequest from "@modules/products/dtos/IProductsRequest";
 
 class BuyProductsService {
   public async execute(
     insertProducts: IInsertProducts
   ): Promise<IProductsRequest[]> {
-    // CHECAGEM DE PRODUTOS REPETIDOS, INEXISTENTES E RETIRADA DE BRINDE DO CARRINHO - VaalidateProductsService
     const newArr: IProductsRequest[] = [];
     const duplicatedIds: number[] = [];
     insertProducts.products.forEach((current: IProductsRequest) => {

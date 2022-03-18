@@ -1,4 +1,4 @@
-import productsJson from "../../../../infra/data/products.json";
+import productsJson from "@infra/data/products.json";
 
 describe("Validate products of JSON file", () => {
   const jsonProducts = productsJson;

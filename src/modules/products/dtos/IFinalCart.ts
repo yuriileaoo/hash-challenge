@@ -1,8 +1,8 @@
-import IProducts from "./IProducts";
+import IProducts from "@modules/products/dtos/IProducts";
 
 export default interface IFinalCart {
-  total_amount: number; // Valor total da compra sem desconto
-  total_amount_with_discount: number; // Valor total da compra com desconto
-  total_discount: number; // Valor total de descontos
+  total_amount: number;
+  total_amount_with_discount: number;
+  total_discount: number;
   products: IProducts[];
 }

@@ -1,6 +1,5 @@
+import productsJson from "@infra/data/products.json";
 import CalculateDiscountsService from "@modules/products/services/CalculateDiscountsService";
-
-import productsJson from "../../../../infra/data/products.json";
 
 let calculateDiscountsService: CalculateDiscountsService;
 
