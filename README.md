@@ -184,7 +184,7 @@ docker-compose up -d
 
 |Versão| Data |
 |--|--|
-| [v1.0.0]() | 18-03-2022 |
+| [v1.0.0](https://github.com/yuriileaoo/hash-challenge/releases/tag/v1.0.0) | 18-03-2022 |
 
 
   
