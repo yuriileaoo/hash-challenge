@@ -1,13 +1,9 @@
+import CalculateDiscountsService from "@modules/products/services/CalculateDiscountsService";
+import CalculateTotalService from "@modules/products/services/CalculateTotalService";
+import CheckBlackFridayService from "@modules/products/services/CheckBlackFridayService";
+import ValidateProductsService from "@modules/products/services/ValidateProductsService";
 import { Response, Request } from "express";
 import { container } from "tsyringe";
-import { promisify } from "util";
-
-import productsJson from "../../../../../infra/data/products.json";
-import BuyProductsService from "../../../services/BuyProductsService";
-import CalculateDiscountsService from "../../../services/CalculateDiscountsService";
-import CalculateTotalService from "../../../services/CalculateTotalService";
-import CheckBlackFridayService from "../../../services/CheckBlackFridayService";
-import ValidateProductsService from "../../../services/ValidateProductsService";
 
 class ProductsController {
   public async buyProducts(

@@ -1,10 +1,7 @@
+import ProductsController from "@modules/products/infra/http/controllers/ProductsController";
+import { BuyProductsValidator } from "@modules/products/infra/http/validators/BuyProductsValidator";
 import { Router } from "express";
 import { container } from "tsyringe";
-
-import ProductsController from "../controllers/ProductsController";
-import { BuyProductsValidator } from "../validators/BuyProductsValidator";
-
-// import ensureAuthenticated from "../../../../../employees/infra/http/middlewares/ensureAuthenticated";
 
 const productsRoutes = Router();
 

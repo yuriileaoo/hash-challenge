@@ -1,9 +1,8 @@
-import productsJson from "../../../infra/data/products.json";
-import IProducts from "../dtos/IProducts";
+import productsJson from "@infra/data/products.json";
+import IProducts from "@modules/products/dtos/IProducts";
 
 class BuyProductsService {
   public async execute(finalProducts: IProducts[]): Promise<IProducts[]> {
-    // BLACK FRIDAY
     const today = new Date().toISOString().substring(0, 10);
     if (today === process.env.BLACK_FRIDAY) {
       const gift = productsJson.filter((a) => {
