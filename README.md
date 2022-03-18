@@ -36,7 +36,7 @@ Este repositório consiste em um carrinho de compras seguindo as regras passadas
 
   
 
-git clone https://github.com/yuriileaoo/hash-challenge
+    git clone https://github.com/yuriileaoo/hash-challenge
 
   
 
@@ -46,7 +46,7 @@ Após o repositório ser clonado, entre no diretorio do projeto para continuar:
 
   
 
-cd ./hash-challenge
+    cd ./hash-challenge
 
   
 
@@ -102,7 +102,7 @@ Para que os testes funcionem, será necessário configurar as variáveis de ambi
 
   
 
-yarn test
+    yarn test
 
   
 
@@ -158,7 +158,7 @@ A utilização de docker facilita o processo de instalação e execução deste 
 
   
 
-docker-compose up
+    docker-compose up
 
   
 
@@ -168,7 +168,7 @@ ou
 
   
 
-docker-compose up -d
+    docker-compose up -d
 
   
 
