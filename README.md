@@ -49,7 +49,8 @@ Após o repositório ser clonado, entre no diretorio do projeto para continuar:
     cd ./hash-challenge
 
   
-
+## Instalação de dependências
+    yarn
   
 
 ## Configurar variáveis de ambiente
