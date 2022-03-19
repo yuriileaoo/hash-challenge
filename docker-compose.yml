@@ -1,0 +1,27 @@
+version: "3.1"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.develop
+    container_name: appHash
+    ports:
+      - 3333:80
+    volumes:
+      - ./:/home/node/app
+    networks:
+      - localNetwork
+
+  discount:
+    container_name: appDiscount
+    image: hashorg/hash-mock-discount-service
+    ports:
+      - 50051:50051
+    networks:
+      - localNetwork
+
+
+networks:
+  localNetwork: 
+    driver: bridge
