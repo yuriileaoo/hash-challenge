@@ -58,7 +58,6 @@ function expressErrorLogger(
     _res: Response,
     _: NextFunction
   ): Response => {
-    Logger.captureError(err);
     console.log(err);
     return _res.status(err?.status || 500).json({
       error: {
